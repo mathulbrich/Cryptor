@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "baseUrl": "src",
+    "target": "es2020",
+    "module": "commonjs",
+    "outDir": "dist/",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "exclude": [
+    "./dist"
+  ],
+}

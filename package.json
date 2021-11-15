@@ -1,0 +1,23 @@
+{
+  "name": "cryptor",
+  "version": "1.0.0",
+  "description": "Crypto tools",
+  "main": "index.js",
+  "author": "mathulbrich",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --project .",
+    "clean": "rm -rf dist",
+    "rsa": "node dist/rsa",
+    "sign": "node dist/sign",
+    "verify": "node dist/verify"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "commander": "^8.3.0",
+    "zod": "^3.11.6"
+  }
+}
