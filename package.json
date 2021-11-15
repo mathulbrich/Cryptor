@@ -10,7 +10,9 @@
     "clean": "rm -rf dist",
     "rsa": "node dist/rsa",
     "sign": "node dist/sign",
-    "verify": "node dist/verify"
+    "verify": "node dist/verify",
+    "encrypt": "node dist/encrypt",
+    "decrypt": "node dist/decrypt"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
