@@ -30,7 +30,7 @@ const execute = (options: Options) => {
 };
 
 new Command()
-  .option("-p, --passphrase <passphrase>", "Add new passphrase to private key")
+  .option("-p, --passphrase <passphrase>", "Add new passphrase to private key", "")
   .action((execute))
   .parse(process.argv);
 

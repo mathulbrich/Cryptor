@@ -16,8 +16,8 @@ const execute = ({ message, signature }: Options) => {
 };
 
 new Command()
-  .option("-m, --message <message>", "Message of signed content")
-  .option("-s, --signature <signature>", "Signature of message")
+  .requiredOption("-m, --message <message>", "Message of signed content")
+  .requiredOption("-s, --signature <signature>", "Signature of message")
   .action((execute))
   .parse(process.argv);
 

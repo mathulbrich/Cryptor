@@ -5,7 +5,7 @@ import { readFileSync } from 'fs';
 
 const Options = z.object({
   message: z.string(),
-  passphrase: z.string().optional(),
+  passphrase: z.string(),
 });
 type Options = z.infer<typeof Options>;
 
@@ -20,8 +20,8 @@ const execute = ({ message, passphrase }: Options) => {
 };
 
 new Command()
-  .option("-m, --message <message>", "Message to sign")
-  .option("-p, --passphrase <passphrase>", "Passphrase to sign")
+  .requiredOption("-m, --message <message>", "Message to sign")
+  .option("-p, --passphrase <passphrase>", "Passphrase to sign", "")
   .action((execute))
   .parse(process.argv);
 
