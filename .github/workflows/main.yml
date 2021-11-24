@@ -26,7 +26,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Test
-        run: ls
+        run: cd $GITHUB_WORKSPACE/.git
       - name: Git diff
         id: git-diff
         uses: technote-space/get-diff-action@v5
